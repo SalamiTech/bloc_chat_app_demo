@@ -56,3 +56,9 @@ The chat application illustrates how users can send and receive messages in real
 - **Database Service**: Handles all interactions with the local SQLite database, including initializing the database, inserting new messages, and retrieving chat history.
 - **Chat Screen**: Displays the UI, including a list of messages and an input field for composing new messages. Uses `BlocBuilder` to reactively rebuild the messages list whenever the chat state changes.
 
+### Screenshot (Screens)
+<p align = "left">
+<img src = "./assets/s1.png" width='20%'>
+<img src = "./assets/s2.png" width='20%'>
+</p>
+
