@@ -13,7 +13,12 @@ class ChatScreen extends StatelessWidget {
     final textController = TextEditingController();
 
     return Scaffold(
-      appBar: AppBar(title: const Text("Chat App")),
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        title: const Text("Chat App"),
+        titleTextStyle: const TextStyle(
+            color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
+      ),
       body: Column(
         children: [
           Expanded(
@@ -36,6 +41,27 @@ class ChatScreen extends StatelessWidget {
                 Expanded(
                   child: TextField(
                     controller: textController,
+                    autofocus: true,
+                    decoration: const InputDecoration(
+                      contentPadding: EdgeInsets.all(15),
+                      hintText: 'Send a message...',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(14),
+                        ),
+                        borderSide: BorderSide(
+                          color: Colors.black,
+                        ),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(14),
+                        ),
+                        borderSide: BorderSide(
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
                   ),
                 ),
                 IconButton(
